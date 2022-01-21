@@ -1,12 +1,3 @@
-/* General */
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 /* Colors */
 :root {
     --white: hsl(0, 0%, 100%);
@@ -15,10 +6,52 @@
     --dark-blue: hsl(218, 44%, 22%);
 }
 
+/* General */
+:root {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--light-gray);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
 /* Typography */
 :root {
     font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
 }
 p {
     font-size: 1.5rem;
+}
+
+/* Card component */
+.card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+.card__image {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+.card__content {
+    text-align: center;
+    margin-top: 2rem;
+}
+.card__title {
+    color: var(--dark-blue);
+}
+.card__text {
+    color: var(--grayish-blue);
 }
